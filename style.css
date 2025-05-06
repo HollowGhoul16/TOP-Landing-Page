@@ -6,8 +6,15 @@
     font-family: 'Roboto';
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .first-qtr {
     background-color: #1F2937;
+    flex: 1.3;
 }
 
 .header {
@@ -54,11 +61,24 @@
     background-color: #3882F6;
     font-size: 18px;
     font-weight: 600;
+    height: 40px;
+    border-radius: 7px;
 }
 
 .second-qtr {
     display: flex;
     flex-direction: column;
+    flex: 1.2;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second-qtr .header-info {
+    display: flex;
+    flex: .4;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
 }
 
 .second-qtr p {
@@ -69,9 +89,96 @@
 
 .image-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    gap: 25px;
 }
 
 .image-box .image-item p {
     color: rgb(101, 108, 116);
+    font-size: 16px;
+}
+
+.third-qtr {
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 1.1;
+}
+
+.quote {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-family: Light Italic;
+    font-style: italic;
+    word-break: break-word;
+}
+
+.third-qtr .quote-author {
     font-size: 18px;
+    color: #1F2937;
+    font-weight: 900;
+    align-self: flex-end;
+}
+
+.fourth-qtr {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-box {
+    background-color: #3882F6;
+    display: flex;
+    width: 75%;
+    height: 50%;
+    border-radius: 7px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sign-up-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign-up-text {
+    color: white;
+}
+
+.sign-up-header {
+    font-size: 18px;
+}
+
+.sign-up-description {
+    font-size: 12px;
+}
+
+.sign-up-box .sign-up-button {
+    border: white;
+    border-style: solid;
+}
+
+.footer {
+    color: white;
+    background-color: #1F2937;
+    flex: .3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
