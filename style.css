@@ -56,3 +56,22 @@
     font-weight: 600;
 }
 
+.second-qtr {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-qtr p {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.image-box {
+    display: flex;
+}
+
+.image-box .image-item p {
+    color: rgb(101, 108, 116);
+    font-size: 18px;
+}
