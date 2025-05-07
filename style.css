@@ -15,11 +15,16 @@ body {
 .first-qtr {
     background-color: #1F2937;
     flex: 1.3;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex: .25;
+    padding-top: 10px;
 }
 
 .header p {
@@ -30,19 +35,25 @@ body {
 
 .header-links {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     color: #E5E7EB;
     font-size: 18px;
 }
 
 .top-page {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+    padding: 30px 0 30px 0;
 }
 
 .website-subtext {
     display: flex;
     flex-direction: column;
+    max-width: 500px;
+    gap: 10px;
 }
 
 .hero-text {
@@ -59,10 +70,23 @@ body {
 .sign-up-button {
     color: #F9FAF8;
     background-color: #3882F6;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     height: 40px;
     border-radius: 7px;
+    width: 100px;
+    
+}
+
+.sign-up-button:hover {
+    background-color: #3881f6c2;
+    color: rgba(255, 255, 255, 0.825);
+}
+
+.image-placeholder img {
+    border-radius: 7px;
+    max-width: 350px;
+    max-height: 200px;
 }
 
 .second-qtr {
@@ -71,14 +95,16 @@ body {
     flex: 1.2;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 .second-qtr .header-info {
     display: flex;
-    flex: .4;
+    flex: .7;
     align-items: center;
     justify-self: center;
     text-align: center;
+    padding: 15px 0 15px 0;
 }
 
 .second-qtr p {
@@ -97,9 +123,28 @@ body {
     gap: 25px;
 }
 
+.image-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.image-item img {
+    max-width: 60px;
+    max-height: 130px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: #3882F6;
+    border-width: 3px;
+    display: flex;
+    align-self: center;
+}
+
 .image-box .image-item p {
     color: rgb(101, 108, 116);
     font-size: 16px;
+    word-break: break-word;
+    max-width: 100px;
 }
 
 .third-qtr {
@@ -135,10 +180,11 @@ body {
 }
 
 .fourth-qtr {
-    flex: 1;
+    flex: 1.05;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100px;
 }
 
 .sign-up-box {
@@ -146,6 +192,7 @@ body {
     display: flex;
     width: 75%;
     height: 50%;
+    flex: 0 1 auto;
     border-radius: 7px;
     justify-content: space-around;
     align-items: center;
@@ -174,6 +221,11 @@ body {
     border-style: solid;
 }
 
+.sign-up-box .sign-up-button:hover {
+    background-color: white;
+    color: #3882F6;
+}
+
 .footer {
     color: white;
     background-color: #1F2937;
@@ -181,4 +233,5 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 40px;
 }
